@@ -1,7 +1,30 @@
-# Messenger chat bot with AWS Lambda & Python
+# Facebook Messenger Chat Bot with AWS Lambda, AWS API Gateway, & Python
+###(written by an R user)
+
+****************
 
 ##How to:
 
-###fb set up
-* login/create account at [developers.facebook.com](https://developers.facebook.com)
-* 
+###Facebook Stuff
+* Login/create account at [developers.facebook.com](https://developers.facebook.com)
+* Go to your [app page](https://developers.facebook.com/apps) & create a new app
+
+###AWS Stuff
+* Login/create an AWS account at [aws.amazon.com](https://aws.amazon.com/)
+* Create a blank lambda function (no need to set a trigger at this point)
+   * If you've never created a lambda function before follow [this guide](http://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html) to create a Hello World python function.  We'll use the same setup in this example.
+* On your new function's page on the Code tab, select upload a .ZIP file, upload the file parrot\_lambda\_env.zip from [my github](https://github.com/AdamSpannbauer/aws_python_messenger)
+  * The contents of the zip file are the contents of the parrot\_lambda\_env directory.  The directory contains the python module [requests]() and a python script 
+* Go to [API Gateway](https://console.aws.amazon.com/apigateway) 
+* Create new api
+   * After clicking Create New API, select New API, and give your API a name & description
+* Create a new resource
+   * Click Actions, select Create Resource from the dropdown menu, and give your resource a name & description
+* Create GET and POST methods
+	* Click Actions & select create method
+	* Select GET from the select menu that appears below your resource name
+	* Select Lambda Function for the integration type, select a region near you, and fill in the name of your Lambda Function in the text input that appears after selecting a region.  Save all of your these settings to continue.
+	* Select Integration Request and expand the section for Body Mapping Templates
+	* Type 'application/json' in the text input and click the checkmark
+	* Select Method Request passthrough from the Generate Template dropdown and click save
+	* Repeat the same process to create a POST method

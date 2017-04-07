@@ -38,7 +38,7 @@
 	* From the Stages page of your API click on your new resource you just created
 	* Copy the Invoke URL that appears
 
-### III More Facebook Stuff
+### III. More Facebook Stuff
 * Set up webhook
 * Set up other stuff
 * test

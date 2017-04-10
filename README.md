@@ -3,15 +3,15 @@
 
 ****************
 
-_Note: Please let me know if you follow the tutorial and are unable to setup a messenger bot successfully; I'd be happy to update the steps to make the tutorial more useful. Please submit an issue describing the problem or if you know the fix please feel free to submit a pull request with a modified README._
+_Note: Please let me know if you follow the tutorial and are unable to setup a messenger bot successfully; I'd be happy to update the steps to make the tutorial more useful. Please [submit an issue](https://github.com/AdamSpannbauer/aws_python_messenger/issues) describing the problem or if you know the fix please feel free to submit a pull request to [the repo](https://github.com/AdamSpannbauer/aws_python_messenger#fork-destination-box) with a modified README._
 
 ### Steps:
 
   * [AWS Setup](#i-aws-stuff)
   	* [Lambda](#lambda-stuff)
-  	* [API Gateway](#api-gateway)
+  	* [API Gateway](#api-gateway-stuff)
   * [Facebook Setup](#ii-facebook-stuff)
-  * [Deploying](#iii-deployment)
+  * [Deployment](#iii-deployment)
   * [Customizing Functionality](#iv-customizing-functionality)
 
 
